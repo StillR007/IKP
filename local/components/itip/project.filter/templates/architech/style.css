@@ -1,0 +1,6 @@
+button[disabled], button[disabled] {
+    color: #ccc !important;
+}
+.filter-item {
+    background-color: white;
+}

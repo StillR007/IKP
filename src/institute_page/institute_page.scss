@@ -1,0 +1,185 @@
+.institute-page {
+	background: #353535;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	position: relative;
+
+	&__top {
+		margin: 90px 100px 0;
+		display: inline-flex;
+		justify-content: space-between;
+		font-family: 'Inter', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		z-index: 2;
+
+		div {
+			display: inline-flex;
+			align-items: center;
+
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+
+		i {
+			color: #808080;
+			font-style: normal;
+		}
+
+		&--arrow {
+			display: flex;
+			background-image: url("data:image/svg+xml,%3Csvg width='34' height='7' viewBox='0 0 34 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.07726 6.92446L0.0750552 3.90288C-0.0250184 3.70144 -0.0250184 3.29856 0.0750552 3.09712L3.07726 0.0755396C3.27741 -0.0251799 3.57763 -0.0251799 3.77778 0.0755396C3.97793 0.276978 3.97793 0.679856 3.77778 0.881295L1.87638 2.9964H34V4.0036H1.87638L3.77778 6.1187C3.97793 6.32014 3.97793 6.72302 3.77778 6.92446C3.57763 7.02518 3.27741 7.02518 3.07726 6.92446Z' fill='%23CEA78F'/%3E%3C/svg%3E%0A");
+			margin-right: 13px;
+			width: 33px;
+			height: 7px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__background-lines {
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-column-gap: 33px;
+		height: 100%;
+		width: 100vw;
+		overflow-x: hidden;
+
+		.column {
+			width: 185px;
+			border-left: 1px solid #3D3D3D;
+			border-right: 1px solid #3D3D3D;
+		}
+
+		.column:first-child {
+			margin-left: 100px;
+		}
+	}
+
+	&__block {
+		width: 406px;
+		margin-left: 320px;
+		margin-top: 60px;
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		height: 40px;
+		z-index: 2;
+
+		&.atom {
+			font-size: 14px;
+			line-height: 17px;
+			color: #808080;
+		}
+
+		a {
+			font-family: 'Manrope',
+				sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 33px;
+			display: flex;
+			align-items: center;
+			color: #fff;
+			text-decoration: none;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		a:hover~a.institute-page__block--arrow {
+			display: flex;
+			position: absolute;
+			right: 0;
+			top: 16px;
+			width: 35px;
+			height: 8px;
+			background-image: url("data:image/svg+xml,%3Csvg width='35' height='8' viewBox='0 0 35 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M30.6 6.95C30.4 6.75 30.4 6.45 30.6 6.25L32.6 4.05H0V3.05H32.6L30.7 0.85C30.5 0.65 30.5 0.35 30.7 0.15C30.9 -0.05 31.2 -0.05 31.4 0.15L34.8 3.55L31.4 6.95C31.2 7.05 30.8 7.05 30.6 6.95Z' fill='%23CEA78F' /%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			margin-left: calc(406px - 35px);
+		}
+
+		a.institute-page__block--arrow {
+			display: none;
+		}
+	}
+
+	&__block:hover {
+		a {
+			color: #CEA78F;
+		}
+	}
+
+
+	&__block:last-child {
+		margin-bottom: 90px;
+	}
+}
+
+@media (max-width: 992px) {
+	.institute-page {
+		&__top {
+			margin: 50px 24px 0;
+			font-size: 10px;
+			line-height: 12px;
+
+			&--arrow {
+				background-image: url("data:image/svg+xml,%3Csvg width='20' height='7' viewBox='0 0 34 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.07726 6.92446L0.0750552 3.90288C-0.0250184 3.70144 -0.0250184 3.29856 0.0750552 3.09712L3.07726 0.0755396C3.27741 -0.0251799 3.57763 -0.0251799 3.77778 0.0755396C3.97793 0.276978 3.97793 0.679856 3.77778 0.881295L1.87638 2.9964H34V4.0036H1.87638L3.77778 6.1187C3.97793 6.32014 3.97793 6.72302 3.77778 6.92446C3.57763 7.02518 3.27741 7.02518 3.07726 6.92446Z' fill='%23CEA78F'/%3E%3C/svg%3E%0A");
+				margin-right: 10px;
+				width: 20px;
+				height: 7px;
+				background-repeat: no-repeat;
+			}
+		}
+
+		&__block {
+			width: 348px;
+			margin: 30px auto 0;
+
+			&.atom {
+				font-size: 10px;
+				line-height: 12px;
+				color: #808080;
+			}
+
+			a {
+				font-size: 18px;
+				line-height: 37px;
+			}
+
+			a:hover~a.institute-page__block--arrow {
+				margin-left: calc(348px - 35px);
+				right: 0;
+				top: 16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.institute-page {
+		&__top {
+			margin: 40px 16px 0;
+		}
+
+		&__block {
+			width: 287px;
+
+			a:hover~a.institute-page__block--arrow {
+				margin-left: calc(287px - 35px);
+			}
+		}
+
+		&__block:last-child {
+			margin-bottom: 40px;
+		}
+	}
+}

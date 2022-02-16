@@ -1,0 +1,32 @@
+.bread-crumbs {
+	font-family: 'Inter',
+		sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	position: relative;
+	display: inline-flex;
+	color: #808080;
+}
+.bx-breadcrumb {
+	display: inline-flex;
+}
+	.bx-breadcrumb-item {
+		font-family: 'Inter',
+			sans-serif;
+		font-size: 14px;
+		line-height: 17px;
+		color: #808080;
+		margin-left: 6px;
+	}
+	.bx-breadcrumb-item:first-child {
+		margin-left: 0;
+	}
+	.bx-breadcrumb-item a {
+			font-family: 'Inter',
+				sans-serif;
+			font-size: 14px;
+			line-height: 17px;
+			color: #808080;
+			text-decoration: none;
+		}
+	

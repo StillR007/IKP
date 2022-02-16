@@ -1,0 +1,5 @@
+<?
+$sSectionName = "Институт";
+$arDirProperties = Array(
+
+);
